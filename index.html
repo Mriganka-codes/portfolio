@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MRIGANKA BAISHYA - AI/Web Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <div class="logo-circle">
+                    <span>M</span>
+                </div>
+            </div>
+            <div class="loading-text">Loading Portfolio...</div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+    </button>
+
+    <!-- Background Animation -->
+    <div class="bg-animation">
+        <div class="gradient-orbs">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="orb orb-3"></div>
+        </div>
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Navigation -->
+        <nav class="navbar" id="navbar">
+            <div class="nav-brand">
+                <div class="brand-icon">
+                    <span>M</span>
+                </div>
+                <span class="brand-text">MRIGANKA BAISHYA</span>
+            </div>
+            <div class="nav-links">
+                <a class="nav-link active" href="#hero">Home</a>
+                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link" href="#experience">Experience</a>
+                <a class="nav-link" href="#projects">Projects</a>
+                <a class="nav-link" href="#skills">Skills</a>
+                <a class="nav-link" href="#contact">Contact</a>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu-content">
+                <a class="mobile-nav-link" href="#hero">Home</a>
+                <a class="mobile-nav-link" href="#about">About</a>
+                <a class="mobile-nav-link" href="#experience">Experience</a>
+                <a class="mobile-nav-link" href="#projects">Projects</a>
+                <a class="mobile-nav-link" href="#skills">Skills</a>
+                <a class="mobile-nav-link" href="#contact">Contact</a>
+            </div>
+        </div>
+
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-greeting">
+                        <span class="greeting-text">Hello, I'm</span>
+                        <div class="typing-cursor"></div>
+                    </div>
+                    <h1 class="hero-title">
+                        <span class="title-name">MRIGANKA BAISHYA</span>
+                        <span class="title-role">I BUILD INNOVATIVE SOLUTIONS!</span>
+                    </h1>
+                    <p class="hero-description">
+                        I'm a CS graduate passionate about solving real-world problems with code. From building web apps to automating data scraping,classifying using NLP and ML and converting handwritten tables with GenAI — I turn ideas into smart, scalable solutions. Always exploring the edge between Web Dev and AI.
+                    </p>
+                    <div class="hero-buttons">
+                        <a class="btn btn-primary" href="#projects">
+                            <span>View My Work</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a class="btn btn-secondary" href="#contact">
+                            <span>Get In Touch</span>
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                    <div class="hero-social">
+                        <a href="https://github.com/Mriganka-codes" class="social-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/mriganka-baishya" class="social-link" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:mriganka.baishya10@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-card">
+                        <div class="profile-avatar">
+                            <div class="avatar-inner">
+                                <img src="pp.jpg" alt="Mriganka Baishya - Profile Picture" class="profile-img">
+                            </div>
+                            <div class="avatar-ring"></div>
+                            <div class="avatar-glow"></div>
+                        </div>
+                        <div class="profile-info">
+                            <h3>MRIGANKA BAISHYA</h3>
+                            <p>Web Dev/GenAI/ML</p>
+                            <div class="profile-status">
+                                <div class="status-dot"></div>
+                                <span>Available for work</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="scroll-text">Scroll Down</div>
+                <div class="scroll-arrow">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="section about-section" id="about">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Discover my journey and passion</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Full Stack Developer & AI Enthusiast</h3>
+                    <p>As a passionate web developer, I bring a strong foundation in computer science and a keen interest in artificial intelligence and machine learning. With experience in developing web applications, scraping data, and building classification models, I am confident in my ability to deliver high-quality solutions.</p>
+                    <p>My expertise spans a range of technologies, including JavaScript, Python, and React.js, allowing me to approach problems from multiple angles. I am excited to continue exploring the intersection of technology and innovation.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="section experience-section" id="experience">
+            <div class="section-header">
+                <h2 class="section-title">Experience</h2>
+                <p class="section-subtitle">My professional journey</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2024 - 2025</div>
+                        <h3 class="timeline-title">Web Developer</h3>
+                        <h4 class="timeline-company">Traviante</h4>
+                        <p class="timeline-description">Led development of innovative solutions and collaborated with cross-functional teams to deliver exceptional results. Specialized in full-stack development with modern technologies.</p>
+                        <div class="timeline-skills">
+                            <span class="skill-chip">Node.js</span>
+                            <span class="skill-chip">MySQL</span>
+                            <span class="skill-chip">RESTful APIs</span>
+                            <span class="skill-chip">JWT</span>
+                            <span class="skill-chip">Multer</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="section projects-section" id="projects">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Some of my recent work</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card featured">
+                    <div class="project-image">
+                        <div class="project-tech-overlay">
+                            <span class="tech-badge">AI/ML</span>
+                            <span class="tech-badge">Python</span>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a class="project-link" href="https://github.com/Mriganka-codes/GenAI-Ledger2Excel-handwritten-to-excel-" target="_blank" aria-label="View project">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a class="project-link" href="https://github.com/Mriganka-codes/GenAI-Ledger2Excel-handwritten-to-excel-" target="_blank" aria-label="View code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">GenAI Ledger-to-Excel Converter</h3>
+
+                        </div>
+                        <p class="project-description">Gemini GenAI powered converter that converts images of handwritten ledger/table to excel files seamlessly. Forget manually adding your written records to excel!</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">Google Gemini API</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">HTML/CSS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-tech-overlay">
+                            <span class="tech-badge">ML</span>
+                            <span class="tech-badge">BERT</span>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a class="project-link" href="https://github.com/Mriganka-codes/CS_questions_scraper-and-categorisation-using-ML" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a class="project-link" href="https://github.com/Mriganka-codes/CS_questions_scraper-and-categorisation-using-ML" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">CS Question Scraper & ML Classifier</h3>
+                        <p class="project-description">Scrapes CS questions from legitimate sources and categorizes them into difficulty levels using BERT and self-developed rule-based methods.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">BERT</span>
+                            <span class="tech-tag">Scrapy</span>
+                            <span class="tech-tag">React.js</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-tech-overlay">
+                            <span class="tech-badge">Automation</span>
+                            <span class="tech-badge">Selenium</span>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a class="project-link" href="https://github.com/Mriganka-codes/X-Twitter-scraper-without-using-API" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a class="project-link" href="https://github.com/Mriganka-codes/X-Twitter-scraper-without-using-API" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">API-less Twitter Scraper</h3>
+                        <p class="project-description">Selenium and Python-based scraper that searches for tweets based on specified keywords and saves results to CSV. Includes scheduling capabilities.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Selenium</span>
+                            <span class="tech-tag">WebDriver</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-tech-overlay">
+                            <span class="tech-badge">Full Stack</span>
+                            <span class="tech-badge">MERN</span>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a class="project-link" href="https://github.com/Mriganka-codes/Travel-management-full-stack" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a class="project-link" href="https://github.com/Mriganka-codes/Travel-management-full-stack" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Travel Management Platform</h3>
+                        <p class="project-description">Comprehensive platform with RESTful API backend, user-facing website, and complete admin CMS panel. Handles authentication, package management, and itinerary creation.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React.js</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Express.js</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-tech-overlay">
+                            <span class="tech-badge">React</span>
+                            <span class="tech-badge">Web App</span>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a class="project-link" href="https://github.com/Mriganka-codes/Typing-Speed-Test-React" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a class="project-link" href="https://github.com/Mriganka-codes/Typing-Speed-Test-React" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Typing Speed Test App</h3>
+                        <p class="project-description">Dynamic and responsive typing speed test with real-time WPM tracking, error counting, and performance analytics.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React.js</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">LocalStorage</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section skills-section" id="skills">
+            <div class="section-header">
+                <h2 class="section-title">Skills & Technologies</h2>
+                <p class="section-subtitle">Tools I work with</p>
+            </div>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3 class="skill-category-title">Frontend</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">JavaScript</span>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">React.js</span>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">HTML5/CSS3</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3 class="skill-category-title">Backend</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Python</span>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Node.js</span>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Express.js</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3 class="skill-category-title">Database</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">MySQL</span>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3 class="skill-category-title">AI/ML</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">BERT/NLP</span>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">GenAI APIs</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section contact-section" id="contact">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's work together</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>mriganka.baishya10@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>GitHub</h4>
+                            <p>github.com/Mriganka-codes</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>LinkedIn</h4>
+                            <p>linkedin.com/in/mriganka-baishya</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+91 7002948852</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form class="form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input class="form-input" id="name" name="name" type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input class="form-input" id="email" name="email" type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input class="form-input" id="subject" name="subject" type="text" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-textarea" id="message" name="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button class="btn btn-primary" type="submit">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2024 Mriganka Baishya. All rights reserved.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/Mriganka-codes" class="social-link" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/mriganka-baishya" class="social-link" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:mriganka.baishya10@gmail.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
